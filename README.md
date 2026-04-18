@@ -1,5 +1,8 @@
 # 🏠 House Price Prediction System (Bengaluru)
 
+## 🎯 Problem Statement
+Predict house prices in Bengaluru using machine learning while handling real-world challenges like missing data, outliers, and high-cardinality categorical features.
+
 ## 📌 Overview
 
 This project builds an end-to-end machine learning pipeline to predict house prices in Bengaluru using multiple regression models and ensemble techniques.
@@ -68,3 +71,25 @@ python main.py
 * Integration of external data (geo/location insights)
 
 ---
+
+## 🧪 Challenges Faced
+- Data leakage due to derived features (price_per_sqft)
+- High cardinality in location feature
+- Outlier handling in real estate data
+- Model overfitting (Decision Tree)
+
+## 💡 Solutions
+- Removed leakage-causing features
+- Reduced location dimensionality
+- Applied domain-based filtering
+- Used ensemble methods (Random Forest, Stacking)
+
+  ## 🧠 Neural Network
+- Used MLPRegressor with hidden layers (64, 32)
+- Captures non-linear relationships
+- Performance compared with tree-based models
+
+  ## 🏆 Best Model
+Stacking model performed best with:
+- MAE: ~20.5
+- R²: ~0.73
